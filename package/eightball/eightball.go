@@ -30,7 +30,7 @@ var fortunes = [20]string{
 
 // DetermineMyFortune uses advanced machine learning and the latest in psychic...ology to determine the answer to your deepest concerns
 func DetermineMyFortune(question string) string {
-	//Question is actually irrelavant...questioners.....
+	//Question is actually irrelavant questioners.....
 	rand.Seed(time.Now().UnixNano())
 	fortuneIndex := rand.Intn(len(fortunes))
 	return fortunes[fortuneIndex]
