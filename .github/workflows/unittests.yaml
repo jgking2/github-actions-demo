@@ -23,5 +23,5 @@ jobs:
         with:
           node-version: '12.x'
       - run: |
-        npm install
-        npm test
+          npm install
+          npm test
