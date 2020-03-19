@@ -7,6 +7,10 @@ name: Unit Tests
 on:
   pull_request:
     branches: [master]
+    paths: #Either syntax for yaml list works
+      - "**.go"
+    paths-ignore:
+      - "**_test.go"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
